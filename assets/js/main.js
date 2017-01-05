@@ -8,7 +8,7 @@ app.controller('CurryCtrl', function($scope, $interval, $http) {
     $scope.nextCurryLunchDisplay = nextCurryLunch.format("dddd, MMMM Do YYYY");
     $scope.nextCurryLunchDistance = nextCurryLunch.fromNow(true);
 
-    $http.get('http://api.giphy.com/v1/gifs/search?q=indian+food&api_key=dc6zaTOxFJmzC').then(function(res) {
+    $http.get('https://api.giphy.com/v1/gifs/search?q=indian+food&api_key=dc6zaTOxFJmzC').then(function(res) {
         var images = res.data.data;
         $scope.image = images[Math.floor(Math.random() * images.length)];
         $interval(function() {
