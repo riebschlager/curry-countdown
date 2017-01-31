@@ -18,8 +18,11 @@
         <div class="content-inner">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12">
+                    <div class="col-sm-12" ng-if="!isCurryTime">
                         <p>We last ate a huge curry lunch on {{lastCurryLunchDisplay}}. It was great, but here's the deal. We can't have curry again until {{nextCurryLunchDisplay}}. That's only {{nextCurryLunchDistance}} away.</p>
+                    </div>
+                    <div class="col-sm-12" ng-if="isCurryTime">
+                        <p>We last ate a huge curry lunch on {{lastCurryLunchDisplay}}. Our innards have completely recovered. It is curry time.</p>
                     </div>
                 </div>
             </div>
