@@ -2,7 +2,7 @@ const app = angular.module('CurryApp', []);
 
 app.controller('CurryCtrl', function($scope, $interval, $http) {
 
-    const lastCurryLunch = moment('2016-09-23 12:00');
+    const lastCurryLunch = moment('2016-02-24 12:00');
     const nextCurryLunch = moment(lastCurryLunch).add(4, 'months');
 
     let currentImage = 0;
