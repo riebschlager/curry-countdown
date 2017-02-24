@@ -18,6 +18,6 @@ app.controller('CurryCtrl', function($scope, $interval, $http) {
         $scope.image = images[Math.floor(Math.random() * images.length)];
         $interval(function() {
             $scope.image = images[Math.floor(Math.random() * images.length)];
-        }, 2 * 1000);
+        }, 4 * 1000);
     });
 });
